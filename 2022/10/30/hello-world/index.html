@@ -6,7 +6,7 @@
 
 
 <!doctype html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
   <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -59,7 +59,7 @@ Qu...">
       <div id="brand">
         
         <a onClick="openUserCard()">
-          <img id="avatar" src="https://avatars2.githubusercontent.com/u/2735087?s=60&u=775d4033139cae6b23c593bcf59fa433224ba4e3&v=4"/>
+          <img id="avatar" src="https://images.unsplash.com/photo-1666811089953-f948eb26502e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80"/>
           <div id="homelink">Xiao's world</div>
         </a>
       </div>
@@ -112,7 +112,7 @@ Qu...">
           
             <li>
           
-            <a target="_blank" rel="noopener" href="https://github.com/stiekel">Github</a>
+            <a target="_blank" rel="noopener" href="https://github.com/The-Xiao">Github</a>
             
           </li>
         
@@ -133,9 +133,9 @@ Qu...">
   <article id="post">
     <h1>Hello World</h1>
     <p class="page-title-sub">
-      <span id = "post-title-date">Created at 2022-10-30</span>
+      <span id = "post-title-date">撰写于 2022-10-30</span>
       
-        <span id = "post-title-updated">Updated at 2022-10-30</span>
+        <span id = "post-title-updated">修改于 2022-10-30</span>
       
       
       
@@ -161,10 +161,10 @@ Qu...">
 
   </article>
   <div class="random-toc-area">
-  <button class="btn-hide-toc btn-hide-toc-show" style="display: none" onclick="TOCToggle()">Show TOC</button>
-  <button class="btn-hide-toc btn-hide-toc-hide" onclick="TOCToggle()">Hide TOC</button>
+  <button class="btn-hide-toc btn-hide-toc-show" style="display: none" onclick="TOCToggle()">显示目录</button>
+  <button class="btn-hide-toc btn-hide-toc-hide" onclick="TOCToggle()">隐藏目录</button>
   <div class="random-toc">
-    <h2>Table of Content</h2>
+    <h2>目录</h2>
     <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
   </div>
 </div>
@@ -173,7 +173,7 @@ Qu...">
   
 <nav id="pagination">
   
-    <a href="/2022/10/30/paper/" class="prev">&larr; Prev post paper</a>
+    <a href="/2022/10/30/paper/" class="prev">&larr; 上一篇 paper</a>
   
 
   
@@ -206,13 +206,13 @@ Qu...">
 
 <div id="user-card">
   <div class="center-field">
-    <img class="avatar" src="https://avatars2.githubusercontent.com/u/2735087?s=60&u=775d4033139cae6b23c593bcf59fa433224ba4e3&v=4">
+    <img class="avatar" src="https://images.unsplash.com/photo-1666811089953-f948eb26502e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80">
     <p id="description"></p>
     <ul class="social-icon">
   
   
     <li>
-      <a target="_blank" rel="noopener" href="https://github.com/stiekel">
+      <a target="_blank" rel="noopener" href="https://github.com/The-Xiao">
         
           <i class="icon iconfont github">&#xe606;</i>
         
@@ -220,9 +220,9 @@ Qu...">
     </li>
   
     <li>
-      <a target="_blank" rel="noopener" href="http://weibo.com/sidcn">
+      <a target="_blank" rel="noopener" href="http://www.bilibili.com">
         
-          <i class="icon iconfont weibo">&#xe602;</i>
+          Weibo
         
       </a>
     </li>
@@ -282,6 +282,10 @@ var isTriggerAnalytics = !( true && isIgnoreHost );
 
   // fancybox
   var backgroundImages = [];
+  
+    
+      backgroundImages.push('https://images.unsplash.com/photo-1666811089953-f948eb26502e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80');
+    
   
   $('#post').each(function(i){
     $(this).find('img').each(function(){
