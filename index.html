@@ -517,16 +517,6 @@
         };
 
         
-        // prev and next cover post.
-        $('#prev-cover').click(function () {
-            coverSlider.carousel('prev');
-            restartPlay();
-        });
-        $('#next-cover').click(function () {
-            coverSlider.carousel('next');
-            restartPlay();
-        });
-        
     });
 </script>
 
@@ -556,6 +546,41 @@
                     
 
                     
+
+                    
+                        <link rel="stylesheet" href="/libs/dplayer/DPlayer.min.css">
+<div class="video-player">
+    
+    <div class="title center-align">
+        <i class="fas fa-video-camera"></i>&nbsp;&nbsp;精彩视频
+    </div>
+    
+    <div class="row">
+		
+			<iframe src='https://upos-hz-mirrorakam.akamaized.net/upgcxcode/28/74/874607428/874607428_nb3-1-16.mp4?e=ig8euxZM2rNcNbRVhwdVhwdlhWdVhwdVhoNvNC8BqJIzNbfq9rVEuxTEnE8L5F6VnEsSTx0vkX8fqJeYTj_lta53NCM=&uipk=5&nbs=1&deadline=1667321127&gen=playurlv2&os=akam&oi=3246029928&trid=5a4f1a5414c34cfbba7104d269480e5eT&mid=0&platform=html5&upsig=2f588848eb80a3bf27d713239fc9bce8&uparams=e,uipk,nbs,deadline,gen,os,oi,trid,mid,platform&hdnts=exp=1667313927~hmac=b050e9155a7ac59566f8b2849d09a694e396d04685976f9d997c2d665151a905&bvc=vod&nettype=0&bw=29638&orderid=0,1&logo=80000000' scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" align="middle"  width="100%"> </iframe>
+		
+    </div>
+</div>
+
+<script src="/libs/dplayer/DPlayer.min.js"></script>
+<script>
+    $(function () {
+        new DPlayer({
+            container: document.getElementById('dplayer'),
+            autoplay: 'false' === 'true',
+            theme: '#42b983',
+            loop: 'false' === 'true',
+            lang: 'zh-CN' === 'zh-CN' ? 'zh-cn' : 'en',
+            preload: 'auto',
+            volume: Number('0.7'),
+            video: {
+                url: '',
+                pic: '',
+                thumbnails: ''
+            }
+        });
+    });
+</script>
 
                     
 
